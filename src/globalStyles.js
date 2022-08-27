@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
 
 export const AppContainer = styled.main`
   display: grid;
-  grid-template: 10vh 80vh 10vh / 1fr 1fr 1fr;
+  grid-template: 10vh 80vh 10vh / 1fr;
   grid-template-areas:
     "header header header"
     "content content content"
