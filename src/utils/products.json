@@ -1,8 +1,50 @@
-{
-    "id": 1,
-    "name": "Product1",
-    "description": "description product 1",
-    "price": 420.00,
-    "quantity": 12,
-    "imgUrl": "frfr"
-}
+[
+    {
+        "id": 1,
+        "name": "Product1",
+        "description": "description product 1",
+        "price": 420.00,
+        "quantity": 12,
+        "imgUrl": "https://picsum.photos/200/300?random=1"
+    },
+    {
+        "id": 2,
+        "name": "Product2",
+        "description": "description product 1",
+        "price": 420.00,
+        "quantity": 12,
+        "imgUrl": "https://picsum.photos/200/300?random=2"
+    },
+    {
+        "id": 3,
+        "name": "Product3",
+        "description": "description product 1",
+        "price": 150.00,
+        "quantity": 12,
+        "imgUrl": "https://picsum.photos/200/300?random=3"
+    },
+    {
+        "id": 4,
+        "name": "Product4",
+        "description": "description product 1",
+        "price": 470.00,
+        "quantity": 12,
+        "imgUrl": "https://picsum.photos/200/300?random=4"
+    },
+    {
+        "id": 5,
+        "name": "Product5",
+        "description": "description product 1",
+        "price": 925.00,
+        "quantity": 12,
+        "imgUrl": "https://picsum.photos/200/300?random=5"
+    },
+    {
+        "id": 6,
+        "name": "Product6",
+        "description": "description product 1",
+        "price": 10.00,
+        "quantity": 12,
+        "imgUrl": "https://picsum.photos/200/300?random=6"
+    }
+]
