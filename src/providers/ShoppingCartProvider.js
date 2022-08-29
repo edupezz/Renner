@@ -5,20 +5,19 @@ export const ShoppingCartContext = React.createContext({});
 export const ShoppingCartProvider = ({ children }) => {
   const [cartItems, setCartItems] = React.useState([]);
 
-  function addItemToCart(id) {
+  function addItemToCart(id, quantity) {
     const newCartItems = [...cartItems];
 
     const newItem = newCartItems.find((item) => item.id === id);
 
     if (!newItem) {
-      newCartItems.push({ id: id, quantity: 1 });
+      newCartItems.push({ id: id, quantity: quantity });
     } else {
-      newItem.quantity = newItem.quantity + 1;
+      newItem.quantity = newItem.quantity + quantity;
     }
 
     setCartItems(newCartItems);
-
-    console.log(cartItems);
+    console.log(newCartItems);
   }
 
   function removeItemFromCart(id) {
@@ -30,7 +29,7 @@ export const ShoppingCartProvider = ({ children }) => {
   function clearCart() {
     setCartItems({});
   }
-
+  console.log(cartItems);
   return (
     <ShoppingCartContext.Provider
       value={{ cartItems, addItemToCart, removeItemFromCart, clearCart }}

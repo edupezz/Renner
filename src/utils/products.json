@@ -2,49 +2,49 @@
     {
         "id": 1,
         "name": "Product1",
-        "description": "description product 1",
+        "description": "Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
         "price": 420.00,
-        "quantity": 12,
-        "imgUrl": "https://picsum.photos/200/300?random=1"
+        "quantity": "60",
+        "imgUrl": "https://picsum.photos/300/300?random=1"
     },
     {
         "id": 2,
         "name": "Product2",
-        "description": "description product 1",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida, magna vel maximus porttitor, justo libero accumsan risus, luctus eleifend lorem mauris sit amet ipsum. Aliquam eget quam lorem",
         "price": 420.00,
-        "quantity": 12,
-        "imgUrl": "https://picsum.photos/200/300?random=2"
+        "quantity": 45,
+        "imgUrl": "https://picsum.photos/300/300?random=2"
     },
     {
         "id": 3,
         "name": "Product3",
-        "description": "description product 1",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lacus nec felis mattis dapibus ut ut magna. Vestibulum purus enim, porta et eros posuere, molestie varius orci. Phasellus imperdiet ac elit quis feugiat.",
         "price": 150.00,
-        "quantity": 12,
-        "imgUrl": "https://picsum.photos/200/300?random=3"
+        "quantity": 33,
+        "imgUrl": "https://picsum.photos/300/300?random=3"
     },
     {
         "id": 4,
         "name": "Product4",
-        "description": "description product 1",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightl",
         "price": 470.00,
-        "quantity": 12,
-        "imgUrl": "https://picsum.photos/200/300?random=4"
+        "quantity": 0,
+        "imgUrl": "https://picsum.photos/300/300?random=4"
     },
     {
         "id": 5,
         "name": "Product5",
-        "description": "description product 1",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean convallis orci varius ligula scelerisque, sed lacinia massa vestibulum. Donec in pellentesque lectus. Fusce aliquam est in rhoncus viverra.",
         "price": 925.00,
-        "quantity": 12,
-        "imgUrl": "https://picsum.photos/200/300?random=5"
+        "quantity": 16,
+        "imgUrl": "https://picsum.photos/300/300?random=5"
     },
     {
         "id": 6,
         "name": "Product6",
-        "description": "description product 1",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor nisl, accumsan ac dictum blandit, lobortis sit amet quam.",
         "price": 10.00,
-        "quantity": 12,
-        "imgUrl": "https://picsum.photos/200/300?random=6"
+        "quantity": 2,
+        "imgUrl": "https://picsum.photos/300/300?random=6"
     }
 ]

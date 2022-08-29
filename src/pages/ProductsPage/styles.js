@@ -8,6 +8,15 @@ export const ProductPageContainer = styled.div`
   align-items: flex-start;
   background-color: purple;
   grid-area: content;
+
+  && {
+    .ant-card-meta-description {
+      min-height: 10vh;
+      max-height: 10vh;
+      overflow-y: scroll;
+      border-bottom: 1px solid lightgray;
+    }
+  }
 `;
 
 export const CardBottomPrice = styled.div`

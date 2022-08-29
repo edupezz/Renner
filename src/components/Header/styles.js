@@ -4,35 +4,42 @@ export const HeaderContainer = styled.div`
   display: flex;
   width: 100%;
   height: 10vh;
-  background-color: red;
+  background-color: #fff;
   grid-area: header;
+  justify-content: space-around;
+  align-items: center;
+  color: #333;
+  border-top: 0.7vh solid #111;
 `;
 
 export const LogoContainer = styled.div`
   display: flex;
   height: auto;
-  background-color: aliceblue;
 
   p {
-    color: coral;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: 600;
   }
 `;
 
 export const NavContainer = styled.nav`
   display: flex;
-  width: 20vw;
   flex-direction: row;
   flex-flow: row;
-  background-color: gainsboro;
+  font-size: 1rem;
 
   ul {
+    width: 20vw;
     display: flex;
-    align-items: center;
-  }
+    margin: 0%;
+    padding: 0;
+    justify-content: space-around;
 
-  li {
-    list-style-type: none;
+    li {
+      display: flex;
+      list-style-type: none;
+    }
   }
 `;
 
@@ -42,10 +49,7 @@ export const SearchContainer = styled.div`
 `;
 
 export const ShoppingCartContainer = styled.div`
-  width: 10vw;
-
-  :first-child {
-    font-size: 1.7rem;
-    color: #fff;
+  .cart {
+    font-size: 2rem;
   }
 `;

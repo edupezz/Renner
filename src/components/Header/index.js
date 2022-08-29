@@ -6,40 +6,45 @@ import {
   LogoContainer,
   NavContainer,
 } from "./styles";
-import { Input, Space } from "antd";
+import { Input } from "antd";
+import { Link } from "react-router-dom";
 
 import { ShoppingCartOutlined } from "@ant-design/icons";
 
 const { Search } = Input;
 
 const Header = () => {
-  const onSearch = (value) => console.log(value);
+  //const onSearch = (value) => console.log(value);
 
   return (
-    <HeaderContainer>
-      <Space direction="horizontal">
+    <>
+      <HeaderContainer>
         <LogoContainer>
-          <p>Header</p>
+          <Link to={"/"}>
+            <p>Header</p>
+          </Link>
         </LogoContainer>
         <NavContainer>
           <ul>
-            <li>Home</li>
-            <li>Products</li>
-            <li>FAQ</li>
+            <Link to={"/"}>
+              <li>Home</li>
+            </Link>
+            <Link to={"products"}>
+              <li>Products</li>
+            </Link>
+            <Link to={"/faq"}>
+              <li>FAQ</li>
+            </Link>
           </ul>
         </NavContainer>
         <SearchContainer>
-          <Search
-            placeholder="input search text"
-            onSearch={onSearch}
-            enterButton
-          />
+          <Search placeholder="input search text" enterButton />
         </SearchContainer>
         <ShoppingCartContainer>
-          <ShoppingCartOutlined />
+          <ShoppingCartOutlined className="cart" />
         </ShoppingCartContainer>
-      </Space>
-    </HeaderContainer>
+      </HeaderContainer>
+    </>
   );
 };
 

@@ -9,8 +9,8 @@ export const GlobalStyle = createGlobalStyle`
   }
   body {
     width: 100vw;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     font-family: Open-Sans, Helvetica, Sans-Serif;
   }`;
 

@@ -26,20 +26,24 @@ const ProductsPage = () => {
   const { cartItems, addItemToCart, removeItemFromCart, clearCart } =
     useContext(ShoppingCartContext);
   const navigate = useNavigate();
-  {
-    console.log(cartItems);
-  }
+
   return (
     <ProductPageContainer>
       {productList.map((product) => {
         return (
           <Card
+            key={product.id}
             hoverable
             style={{ width: "15rem" }}
-            cover={<img alt={product.name} src={product.imgUrl} />}
-            onClick={() => {
-              navigate(`/product/${product.id}`);
-            }}
+            cover={
+              <img
+                alt={product.name}
+                src={product.imgUrl}
+                onClick={() => {
+                  navigate(`/product/${product.id}`);
+                }}
+              />
+            }
           >
             <Meta title={product.name} description={product.description} />
 
@@ -52,25 +56,6 @@ const ProductsPage = () => {
                   currency: "BRL",
                 })}
               </TextShoppingCartContainer>
-              <CartShoppingContainer>
-                <Button
-                  type="primary"
-                  icon={
-                    <MinusSquareOutlined
-                      onClick={() => removeItemFromCart(product.id)}
-                    />
-                  }
-                />
-                <Input readOnly value={product?.quantity ?? 0} />
-                <Button
-                  type="primary"
-                  icon={
-                    <PlusSquareOutlined
-                      onClick={() => addItemToCart(product.id)}
-                    />
-                  }
-                />
-              </CartShoppingContainer>
             </CardBottomPrice>
           </Card>
         );
