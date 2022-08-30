@@ -1,21 +1,13 @@
-import React, { useContext } from "react";
+import React from "react";
 import productList from "../../utils/products.json";
-import { ShoppingCartContext } from "../../providers/ShoppingCartProvider";
 import { useNavigate } from "react-router-dom";
 
-import {
-  ShoppingCartOutlined,
-  PlusSquareOutlined,
-  MinusSquareOutlined,
-} from "@ant-design/icons";
-
-import { Card, Button, Input } from "antd";
+import { Card } from "antd";
 
 import {
   ProductPageContainer,
   CardBottomPrice,
   TextShoppingCartContainer,
-  CartShoppingContainer,
 } from "./styles";
 
 const { Meta } = Card;

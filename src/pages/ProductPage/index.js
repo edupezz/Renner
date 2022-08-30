@@ -37,7 +37,7 @@ const ProductPage = () => {
   return (
     <ProductPageContainer>
       <ProductImageContainer>
-        <img src={productUrl} />
+        <img src={productUrl} alt="Produto" />
       </ProductImageContainer>
       <ProductDescriptionContainer>
         <TitleProductDescriptionContainer>

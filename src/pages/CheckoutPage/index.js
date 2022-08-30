@@ -7,8 +7,6 @@ import { Button, Table } from "antd";
 const CheckoutPage = () => {
   const { cartItems, clearCart } = React.useContext(ShoppingCartContext);
 
-  console.log(cartItems);
-
   const columns = [
     {
       title: "Id",
