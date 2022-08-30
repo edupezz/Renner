@@ -1,5 +1,9 @@
 # Teste técnico Renner.
 
+### Deploy:
+
+https://ps-renner.surge.sh/
+
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
