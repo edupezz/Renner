@@ -23,8 +23,6 @@ const { Meta } = Card;
 console.log(productList.length);
 
 const ProductsPage = () => {
-  const { cartItems, addItemToCart, removeItemFromCart, clearCart } =
-    useContext(ShoppingCartContext);
   const navigate = useNavigate();
 
   return (

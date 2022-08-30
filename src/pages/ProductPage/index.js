@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import productList from "../../utils/products.json";
 import { ShoppingCartContext } from "../../providers/ShoppingCartProvider";
-import { PlusSquareOutlined } from "@ant-design/icons";
+import { PlusSquareOutlined, MinusSquareOutlined } from "@ant-design/icons";
 
 import {
   Quantity,
@@ -20,28 +20,20 @@ const ProductPage = () => {
   const [qtd, setQtd] = React.useState(1);
   const pathParams = useParams();
   const productId = Number(pathParams.id);
-  const { addItemToCart } = React.useContext(ShoppingCartContext);
+  const { handleShoppingCart } = React.useContext(ShoppingCartContext);
   const file = JSON.stringify(productList);
   const file2 = JSON.parse(file);
 
   const productUrl = `https://picsum.photos/300/300?random=${productId}`;
 
   const onChange = (value) => {
-    console.log(value);
     setQtd(value);
   };
 
   const handleCart = (id) => {
-    console.log(id);
-    addItemToCart(id, qtd);
+    handleShoppingCart(id, qtd, "plus");
   };
 
-  //console.log("Product", +productId);
-  //console.log(productList[productId - 1]);
-  console.log(file2);
-  console.log(productList);
-  console.log(file2[productId - 1].quantity > 0);
-  console.log(qtd);
   return (
     <ProductPageContainer>
       <ProductImageContainer>
@@ -60,8 +52,11 @@ const ProductPage = () => {
         Description: <br /> {productList[productId - 1].description}
         <BottomActionsContainer>
           <Quantity
+            min={0}
+            max={99}
             defaultValue="1"
             onChange={onChange}
+            disabled={file2[productId - 1].quantity <= 0}
             bordered
             controls
             keyboard
@@ -73,8 +68,16 @@ const ProductPage = () => {
           >
             Adicionar ao carrinho
           </AddToCartButton>
-          <BuyNowButton>oi</BuyNowButton>
-          <StockQuantity>
+          <BuyNowButton
+            onClick={() => handleCart(productId)}
+            icon={<MinusSquareOutlined />}
+            disabled={file2[productId - 1].quantity <= 0}
+          >
+            Remover do carrinho
+          </BuyNowButton>
+          <StockQuantity
+            border={file2[productId - 1].quantity <= 0 ? "red" : "#fff"}
+          >
             <span>
               {file2[productId - 1].quantity} - Quantidade em estoque.
             </span>

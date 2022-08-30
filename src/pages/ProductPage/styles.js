@@ -69,6 +69,8 @@ export const Quantity = styled(InputNumber)`
 export const StockQuantity = styled.div`
   grid-area: stockQuantity;
   background-color: #fff;
+  border: solid 1px;
+  border-color: ${(props) => props.border};
 
   span {
     margin-left: 11px;

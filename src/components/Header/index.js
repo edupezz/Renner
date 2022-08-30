@@ -1,4 +1,5 @@
 import React from "react";
+import { ShoppingCartContext } from "../../providers/ShoppingCartProvider";
 import {
   ShoppingCartContainer,
   SearchContainer,
@@ -6,7 +7,7 @@ import {
   LogoContainer,
   NavContainer,
 } from "./styles";
-import { Input } from "antd";
+import { Input, Badge } from "antd";
 import { Link } from "react-router-dom";
 
 import { ShoppingCartOutlined } from "@ant-design/icons";
@@ -14,7 +15,7 @@ import { ShoppingCartOutlined } from "@ant-design/icons";
 const { Search } = Input;
 
 const Header = () => {
-  //const onSearch = (value) => console.log(value);
+  const { totalItems } = React.useContext(ShoppingCartContext);
 
   return (
     <>
@@ -41,7 +42,9 @@ const Header = () => {
           <Search placeholder="input search text" enterButton />
         </SearchContainer>
         <ShoppingCartContainer>
-          <ShoppingCartOutlined className="cart" />
+          <Badge count={totalItems ?? 0} showZero>
+            <ShoppingCartOutlined className="cart" />
+          </Badge>
         </ShoppingCartContainer>
       </HeaderContainer>
     </>
