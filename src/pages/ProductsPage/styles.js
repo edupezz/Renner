@@ -8,6 +8,7 @@ export const ProductPageContainer = styled.div`
   align-items: flex-start;
   background-color: purple;
   grid-area: content;
+  align-items: center;
 
   && {
     .ant-card-meta-description {
