@@ -41,11 +41,13 @@ const Header = () => {
         <SearchContainer>
           <Search placeholder="input search text" enterButton />
         </SearchContainer>
-        <ShoppingCartContainer>
-          <Badge count={totalItems ?? 0} showZero>
-            <ShoppingCartOutlined className="cart" />
-          </Badge>
-        </ShoppingCartContainer>
+        <Link to={"/checkout"}>
+          <ShoppingCartContainer>
+            <Badge count={totalItems ?? 0} showZero>
+              <ShoppingCartOutlined className="cart" />
+            </Badge>
+          </ShoppingCartContainer>
+        </Link>
       </HeaderContainer>
     </>
   );

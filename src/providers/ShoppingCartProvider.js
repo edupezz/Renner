@@ -13,7 +13,7 @@ export const ShoppingCartProvider = ({ children }) => {
     if (!newItem) {
       newCartItems.push({ id: id, quantity: quantity });
     } else {
-      if (operation === "plus") {
+      if (operation === "add") {
         newItem.quantity = newItem.quantity + quantity;
       } else {
         newItem.quantity = newItem.quantity - quantity;
@@ -23,13 +23,16 @@ export const ShoppingCartProvider = ({ children }) => {
   }
 
   let totalItems = cartItems.reduce((total, number) => {
-    return total + number.quantity;
+    if (total + number.quantity <= 0) {
+      return 0;
+    } else {
+      return total + number.quantity;
+    }
   }, 0);
 
   function clearCart() {
-    setCartItems({});
+    setCartItems([]);
   }
-  console.log(cartItems);
   return (
     <ShoppingCartContext.Provider
       value={{

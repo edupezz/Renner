@@ -30,8 +30,8 @@ const ProductPage = () => {
     setQtd(value);
   };
 
-  const handleCart = (id) => {
-    handleShoppingCart(id, qtd, "plus");
+  const handleCart = (id, oper) => {
+    handleShoppingCart(id, qtd, oper);
   };
 
   return (
@@ -62,14 +62,14 @@ const ProductPage = () => {
             keyboard
           />
           <AddToCartButton
-            onClick={() => handleCart(productId)}
+            onClick={() => handleCart(productId, "add")}
             icon={<PlusSquareOutlined />}
             disabled={file2[productId - 1].quantity <= 0}
           >
             Adicionar ao carrinho
           </AddToCartButton>
           <BuyNowButton
-            onClick={() => handleCart(productId)}
+            onClick={() => handleCart(productId, "remove")}
             icon={<MinusSquareOutlined />}
             disabled={file2[productId - 1].quantity <= 0}
           >
