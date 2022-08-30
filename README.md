@@ -34,6 +34,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Ant-Design](https://ant.design/)
 - [React Router](https://reactrouter.com/en/main)
 - [Styled-Components](https://styled-components.com/)
+- [Lorem Picsum](https://picsum.photos/)
 
 ### Autor
 
@@ -41,9 +42,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 <a href="https://www.linkedin.com/in/eduardo-pezzi/">
  <br />
- <sub><b><h3>Eduardo Pezzi</h3></b></sub></a> <a href="https://www.linkedin.com/in/eduardo-pezzi/" title="Full Stack Developer">🚀</a>
+ <sub><b><h3>Eduardo Pezzi</h3></b></sub></a><a href="https://www.linkedin.com/in/eduardo-pezzi/" title="Full Stack Developer">🚀</a>
 
 Feito com ❤️ por Eduardo Pezzi 👋🏽 Entre em contato!
-
-[![Linkedin Badge](https://img.shields.io/badge/-Eduardo Pezzi-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/eduardo-pezzi/)](https://www.linkedin.com/in/eduardo-pezzi/)
+[![Linkedin Badge](https://img.shields.io/badge/-Eduardo-Pezzi-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/eduardo-pezzi/)](https://www.linkedin.com/in/eduardo-pezzi/)
 [![Gmail Badge](https://img.shields.io/badge/-edupezz@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:edupezz@gmail.com)](mailto:edupezz@gmail.com)

@@ -5,7 +5,7 @@ export const ShoppingCartContext = React.createContext({});
 export const ShoppingCartProvider = ({ children }) => {
   const [cartItems, setCartItems] = React.useState([]);
 
-  function handleShoppingCart(id, quantity, operation) {
+  function handleShoppingCart(id, quantity = 1, operation = "add") {
     const newCartItems = [...cartItems];
 
     const newItem = newCartItems.find((item) => item.id === id);
