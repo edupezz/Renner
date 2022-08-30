@@ -7,7 +7,7 @@ import {
   LogoContainer,
   NavContainer,
 } from "./styles";
-import { Input, Badge } from "antd";
+import { Input, Badge, Tooltip } from "antd";
 import { Link } from "react-router-dom";
 
 import { ShoppingCartOutlined } from "@ant-design/icons";
@@ -34,7 +34,9 @@ const Header = () => {
               <li>Products</li>
             </Link>
             <Link to={"/faq"}>
-              <li>FAQ</li>
+              <Tooltip title="Vai dar ERRO!" placement="left">
+                <li>FAQ</li>
+              </Tooltip>
             </Link>
           </ul>
         </NavContainer>

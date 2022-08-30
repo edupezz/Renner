@@ -4,7 +4,7 @@ import ProductsPage from "./pages/ProductsPage/index";
 import ProductPage from "./pages/ProductPage/index";
 import CheckoutPage from "./pages/CheckoutPage";
 import HomePage from "./pages/HomePage/index";
-import FaqPage from "./pages/FaqPage/index";
+import ErrorPage from "./pages/ErrorPage";
 
 const Router = () => {
   return (
@@ -12,8 +12,8 @@ const Router = () => {
       <Route path="/product/:id" element={<ProductPage />} />
       <Route path="/products" element={<ProductsPage />} />
       <Route path="/checkout" element={<CheckoutPage />} />
-      <Route path="/faq" element={<FaqPage />} />
       <Route path="/" element={<HomePage />} />
+      <Route path="*" element={<ErrorPage />} />
     </Routes>
   );
 };
