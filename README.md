@@ -1,4 +1,4 @@
-#1 Teste técnico Renner.
+# Teste técnico Renner.
 
 ### Pré-requisitos
 
@@ -8,7 +8,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 
 ### 🎲 Rodando o Front end.
 
-```bash/terminal/wsl
+```bash
 # Clone este repositório
 $ git clone <https://github.com/edupezz/renner>
 
@@ -22,7 +22,7 @@ $ npm install
 $ npm run start
 
 # A aplicação iniciará no seu localhost e poderá ser visualizada no navegador de sua preferência, na porta 3000.
-
+```
 
 ### 🛠 Tecnologias
 
@@ -35,17 +35,15 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [React Router](https://reactrouter.com/en/main)
 - [Styled-Components](https://styled-components.com/)
 
-
 ### Autor
+
 ---
 
 <a href="https://www.linkedin.com/in/eduardo-pezzi/">
  <br />
- <sub><b>Eduardo Pezzi</b></sub></a> <a href="https://www.linkedin.com/in/eduardo-pezzi/" title="Full Stack Developer">🚀</a>
-
+ <sub><b><h3>Eduardo Pezzi</h3></b></sub></a> <a href="https://www.linkedin.com/in/eduardo-pezzi/" title="Full Stack Developer">🚀</a>
 
 Feito com ❤️ por Eduardo Pezzi 👋🏽 Entre em contato!
 
-[![Linkedin Badge](https://img.shields.io/badge/-Thiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/eduardo-pezzi/)](https://www.linkedin.com/in/eduardo-pezzi/)
+[![Linkedin Badge](https://img.shields.io/badge/-Eduardo Pezzi-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/eduardo-pezzi/)](https://www.linkedin.com/in/eduardo-pezzi/)
 [![Gmail Badge](https://img.shields.io/badge/-edupezz@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:edupezz@gmail.com)](mailto:edupezz@gmail.com)
-```
