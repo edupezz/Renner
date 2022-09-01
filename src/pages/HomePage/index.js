@@ -1,6 +1,7 @@
 import React from "react";
 import { HomePageContainer, CarouselContainer } from "./styles";
 import CarouselComponent from "./carousel";
+import { Divider } from "antd";
 
 const HomePage = () => {
   return (
@@ -8,6 +9,7 @@ const HomePage = () => {
       <CarouselContainer>
         <CarouselComponent />
       </CarouselContainer>
+      <Divider />
     </HomePageContainer>
   );
 };

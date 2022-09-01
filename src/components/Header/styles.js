@@ -4,7 +4,7 @@ export const HeaderContainer = styled.div`
   display: flex;
   width: 100%;
   height: 10vh;
-  background-color: #fff;
+  background-color: #eee;
   grid-area: header;
   justify-content: space-around;
   align-items: center;

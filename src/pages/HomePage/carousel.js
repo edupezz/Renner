@@ -1,19 +1,29 @@
 import React from "react";
 import "antd/dist/antd.css";
 import { Carousel, Tooltip } from "antd";
+import "./carousel.css";
 import productList from "../../utils/products.json";
 import { ShoppingCartContext } from "../../providers/ShoppingCartProvider";
-import { ShoppingCartOutlined } from "@ant-design/icons";
+import {
+  ShoppingCartOutlined,
+  LeftOutlined,
+  RightOutlined,
+} from "@ant-design/icons";
 
 const CarouselComponent = () => {
   const { handleShoppingCart } = React.useContext(ShoppingCartContext);
   return (
     <Carousel>
-      <Carousel autoplay>
+      <Carousel
+        autoplay
+        arrows
+        prevArrow={<LeftOutlined />}
+        nextArrow={<RightOutlined />}
+      >
         <div>
           <div
             style={{
-              backgroundColor: "green",
+              backgroundColor: "#AAA",
               display: "flex",
               justifyContent: "space-evenly",
               marginTop: "1vh",
@@ -29,8 +39,12 @@ const CarouselComponent = () => {
               {productList[0].name}
             </h2>
             <img
-              src={productList[0].imgUrl}
-              style={{ objectFit: "fill", marginTop: "10px" }}
+              src="https://picsum.photos/2000/300?random=1"
+              style={{
+                objectFit: "fill",
+                marginTop: "10px",
+                marginBottom: "10px",
+              }}
             />
             <Tooltip title="Adicionar ao carrinho" placement="left">
               <ShoppingCartOutlined
@@ -44,12 +58,12 @@ const CarouselComponent = () => {
               />
             </Tooltip>
           </div>
-          <div style={{ height: "20w", backgroundColor: "green" }}></div>
+          <div style={{ height: "20w", backgroundColor: "#AAA" }}></div>
         </div>
         <div>
           <div
             style={{
-              backgroundColor: "green",
+              backgroundColor: "#AAA",
               display: "flex",
               justifyContent: "space-evenly",
               marginTop: "1vh",
@@ -65,8 +79,12 @@ const CarouselComponent = () => {
               {productList[1].name}
             </h2>
             <img
-              src={productList[1].imgUrl}
-              style={{ objectFit: "fill", marginTop: "10px" }}
+              src="https://picsum.photos/2000/300?random=2"
+              style={{
+                objectFit: "fill",
+                marginTop: "10px",
+                marginBottom: "10px",
+              }}
             />
             <Tooltip title="Adicionar ao carrinho" placement="left">
               <ShoppingCartOutlined
@@ -79,12 +97,12 @@ const CarouselComponent = () => {
               />
             </Tooltip>
           </div>
-          <div style={{ height: "20w", backgroundColor: "green" }}></div>
+          <div style={{ height: "20w", backgroundColor: "#AAA" }}></div>
         </div>
         <div>
           <div
             style={{
-              backgroundColor: "green",
+              backgroundColor: "#AAA",
               display: "flex",
               justifyContent: "space-evenly",
               marginTop: "1vh",
@@ -100,8 +118,12 @@ const CarouselComponent = () => {
               {productList[2].name}
             </h2>
             <img
-              src={productList[2].imgUrl}
-              style={{ objectFit: "fill", marginTop: "10px" }}
+              src="https://picsum.photos/2000/300?random=3"
+              style={{
+                objectFit: "fill",
+                marginTop: "10px",
+                marginBottom: "10px",
+              }}
             />
             <Tooltip title="Adicionar ao carrinho" placement="left">
               <ShoppingCartOutlined
@@ -114,13 +136,13 @@ const CarouselComponent = () => {
               />
             </Tooltip>
           </div>
-          <div style={{ height: "20w", backgroundColor: "green" }}></div>
+          <div style={{ height: "20w", backgroundColor: "#AAA" }}></div>
         </div>
         <div>
           <div>
             <div
               style={{
-                backgroundColor: "green",
+                backgroundColor: "#AAA",
                 display: "flex",
                 justifyContent: "space-evenly",
                 marginTop: "1vh",
@@ -136,8 +158,12 @@ const CarouselComponent = () => {
                 {productList[3].name}
               </h2>
               <img
-                src={productList[3].imgUrl}
-                style={{ objectFit: "fill", marginTop: "10px" }}
+                src="https://picsum.photos/2000/300?random=4"
+                style={{
+                  objectFit: "fill",
+                  marginTop: "10px",
+                  marginBottom: "10px",
+                }}
               />
               <Tooltip title="Adicionar ao carrinho" placement="left">
                 <ShoppingCartOutlined
@@ -150,7 +176,7 @@ const CarouselComponent = () => {
                 />
               </Tooltip>
             </div>
-            <div style={{ height: "20w", backgroundColor: "green" }}></div>
+            <div style={{ height: "20w", backgroundColor: "#AAA" }}></div>
           </div>
         </div>
       </Carousel>
