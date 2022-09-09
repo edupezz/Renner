@@ -29,7 +29,7 @@ const CarouselComponent = () => {
               marginTop: "1vh",
             }}
           >
-            <h2
+            <span
               style={{
                 display: "flex",
                 justifyContent: "center",
@@ -37,7 +37,7 @@ const CarouselComponent = () => {
               }}
             >
               {productList[0].name}
-            </h2>
+            </span>
             <img
               src="https://picsum.photos/2000/300?random=1"
               style={{
@@ -54,6 +54,7 @@ const CarouselComponent = () => {
                   display: "flex",
                   alignItems: "center",
                   fontSize: "5rem",
+                  zIndex: 99,
                 }}
               />
             </Tooltip>
